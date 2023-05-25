@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Friend Registry</title>
+		<style>
+		body {
+		     background: rgb(39,73,244);
+             background: radial-gradient(circle, rgba(39,73,244,1) 5%, rgba(230,115,152,1) 41%, rgba(181,131,193,1) 66%, rgba(222,173,154,1) 85%, rgba(143,75,170,1) 100%);
+			 }
+			form {
+				border: 2px solid #E0C3FC;
+				padding: 20px;
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 50px;
+				border: 1px solid #881374;
+				border-radius: 6px;
+				box-sizing: border-box;
+				font-size: 16px;
+			}
+
+			input[type="submit"] {
+				background-color: coral;
+				color: black;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: alias;
+				font-size: 16px;
+			}
+
+			input[type="submit"]:hover {
+				background-color: #346fa0;
+			}
+
+			h1 {
+				text-align: center;
+				font-family:font-family: Arial, Helvetica, sans-serif;	
+				font-style: inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>FRIEND REGISTRY</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" />
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" />
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" />
+
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday" />
+
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address" />
+
+			<label for="interests">Interests:</label>
+			<textarea id="interests" name="interests"></textarea>
+
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>
